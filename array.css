@@ -1,0 +1,80 @@
+body {
+    background-color: #3c3b45;
+    color: #eee;
+}
+.container {
+    margin: 5% auto;
+    max-width: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .8em;
+}
+
+.form-search {
+    display: flex;
+    flex-basis: 100%;
+}
+
+.form-search>input{
+    flex-basis: 100%;
+    background-color: #3c3b45;
+    color: #eee;
+    border: none;
+    border-bottom: 1px solid #eee;
+    padding: 10px 12px;
+    outline: none;
+}
+
+.flex {
+    font-size: 18px;
+    flex-basis: 100%;
+    display: flex;
+    gap: .5em;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.flex-child {
+    display: flex;
+    align-items: center;
+}
+
+.flex-children {
+    display: flex;
+    gap: .5em;
+    align-items: center;
+}
+
+.update, .delete {
+    font-size: 18px;
+    padding: 5px;
+    color: #eee;
+    cursor: pointer;
+    border: none;
+    border-radius: .4em;
+}
+
+.update {
+    background-color: rgb(58, 142, 226);
+}
+
+.delete {
+    background-color: rgb(242, 97, 58);
+}
+
+#myTable {
+    font-size: 18px;
+    width: 100%;
+    flex-basis: 100%;
+    border-block: 1px solid #eee;
+    border-collapse: collapse;
+}
+
+#myTable> tbody, tr, td {
+    border-block: 1px solid #eee;
+}
+
+th:not(:last-child), td:not(:last-child) {
+    text-align: left;
+    padding: 14px 12px;
+}
